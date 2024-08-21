@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=900 height=600 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -57,11 +57,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/RetroComputerSim WEBGL.loader.js";
+      var loaderUrl = buildUrl + "/RetroComputerSimWebGL.loader.js";
       var config = {
-        dataUrl: buildUrl + "/RetroComputerSim WEBGL.data",
-        frameworkUrl: buildUrl + "/RetroComputerSim WEBGL.framework.js",
-        codeUrl: buildUrl + "/RetroComputerSim WEBGL.wasm",
+        dataUrl: buildUrl + "/RetroComputerSimWebGL.data",
+        frameworkUrl: buildUrl + "/RetroComputerSimWebGL.framework.js",
+        codeUrl: buildUrl + "/RetroComputerSimWebGL.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "RetroComputerSim",
@@ -94,7 +94,7 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "960px";
+        canvas.style.width = "900px";
         canvas.style.height = "600px";
       }
 
